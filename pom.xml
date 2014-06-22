@@ -6,7 +6,7 @@
 
     <groupId>com.sentilabs</groupId>
     <artifactId>rabbitmq-helpers</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,6 +35,19 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>sentilabs</id>
+            <name>sentilabs-releases</name>
+            <url>http://fs.sentilabs.com:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>sentilabs</id>
+            <name>sentilabs-snapshots</name>
+            <url>http://fs.sentilabs.com:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 
 </project>
